@@ -2,14 +2,12 @@
 start project
 
 =====================================================================*/
-
 html {
-      font-family: 'Ubuntu', sans-serif;
-      color: #222;
-      font-size: 1em;
-      line-height: 1.4;
+  font-family: 'Ubuntu', sans-serif;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
 }
-
 
 /*==================================================================
 header for all page
@@ -24,29 +22,21 @@ header figure {
   padding: 0;
 }
 header figure a img {
-      width: 75px;
-      height: 75px;
+  width: 75px;
+  height: 75px;
 }
-
 header #nav {
   width: 200px;
   position: absolute;
   top: 30px;
   left: 0px;
   /*
-      /*
   *menu hamburger
   *top right position
   *
   */
 }
 header #nav .menu .sub {
-  -webkit-animation-name: example;
-  /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 4s;
-  /* Safari 4.0 - 8.0 */
-  animation-name: example;
-  animation-duration: 4s;
   display: none;
 }
 header #nav .menu .sub li {
@@ -103,162 +93,14 @@ header #nav .menu .header__icon #header__icon:after {
   -moz-box-shadow: 0 10px 0 1px #000000, 0 16px 0 1px #000000, 0 22px 0 1px #000000;
   box-shadow: 0 10px 0 1px #000000, 0 16px 0 1px #000000, 0 22px 0 1px #000000;
 }
-@keyframes example {
-  0% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-  }
-  25% {
-    background-color: yellow;
-    left: 200px;
-    top: 0px;
-  }
-  50% {
-    background-color: blue;
-    left: 200px;
-    top: 200px;
-  }
-  75% {
-    background-color: green;
-    left: 0px;
-    top: 200px;
-  }
-  100% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-  }
-}
 header #nav .menu li:hover > ul {
   /*
   *dropdown visible
   */
-
-header #nav ul {
-      /*
-  *disable dropdown menu
-  */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-
-header #nav ul .dropdown {
-      transform: translateX(70px);
-      /*
-  *position of dropdown
-  *menu dropdown
-  **/
-      position: fixed;
-      top: 40px;
-      right: 50px;
-      margin: 0;
-      padding: 0;
-      width: 120px;
-      height: 120px;
-      border-radius: 3px;
-      background-color: aliceblue;
-      z-index: 60;
-}
-
-header #nav ul .dropdown li {
-      list-style-type: none;
-}
-
-header #nav ul .dropdown li a {
-      text-decoration: none;
-      color: #222222;
-}
-
-header #nav ul .header__icon {
-      list-style-type: none;
-}
-
-header #nav ul .header__icon #header__icon {
-      display: block;
-      border-radius: 3px;
-      background-color: #4146ff;
-      width: 40px;
-      height: 30px;
-      cursor: pointer;
-      position: fixed;
-      top: 10px;
-      left: 286px;
-}
-
-header #nav ul .header__icon #header__icon:after {
-      content: '';
-      margin: 0 auto;
-      padding: 0;
-      display: block;
-      width: 1.2rem;
-      height: 0;
-      -webkit-box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
-      -moz-box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
-      box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
-}
-
-header #nav ul li:hover>ul {
-      /*
-  *dropdown visible
-  */
-      transform: translateX(0);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-}
-
 
 /*# sourceMappingURL=main.css.map */
-
-
-/*===================================================================================
-
-FOOTER for all pages
-
-===================================================================================*/
-footer{
-  width: auto;
-  height: 200px;
-  background-color: black;
-  padding: 15px;
-  border-radius: 3px;;
-}
-
-.highPage{
-  display: block;
-  width: 36px;
-  height: 36px;
-  margin:15px auto;
-}
-
-footer ul li a{
-  width: 36px;
-  height: 36px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-footer ul{
-  height: 80px;
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  padding:0 25px;
-}
-
-footer ul li{
-  align-self: center;
-}
-
-footer img{
-  width: 36px;
-  height: 36px;
-}
-
-footer p{
-  height: 30px;
-  margin-top: 0;
-  display: flex;
-  justify-content: center;
-  color: white;
-}
