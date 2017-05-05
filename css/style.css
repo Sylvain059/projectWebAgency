@@ -3,32 +3,50 @@ start project
 
 =====================================================================*/
 html {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /*==================================================================
 header for all page
 
 ======================================================================*/
+header {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
 header h1 {
+  background-color: #262626;
+  color: white;
+  font-weight: lighter;
   text-align: center;
   font-size: 14px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 header figure {
-  margin: 0;
-  padding: 0;
+  padding-left: 0;
+  margin-left: 0;
 }
 header figure a img {
-  width: 75px;
+  width: 150px;
 }
 header #nav {
-  width: 200px;
-  position: absolute;
-  top: 30px;
-  left: 0px;
   /*
   *menu hamburger
   *top right position
@@ -50,9 +68,6 @@ header #nav .menu .sub li .dropdown {
   *position of dropdown
   *menu dropdown
   **/
-  position: fixed;
-  top: 40px;
-  right: 0;
   margin: 0;
   padding: 0;
   width: 120px;
@@ -77,9 +92,6 @@ header #nav .menu .header__icon #header__icon {
   width: 40px;
   height: 30px;
   cursor: pointer;
-  position: fixed;
-  top: 10px;
-  left: 286px;
 }
 header #nav .menu .header__icon #header__icon:after {
   content: '';
@@ -96,10 +108,55 @@ header #nav .menu li:hover > ul {
   /*
   *dropdown visible
   */
+  position: absolute;
+  top: 50px;
+  right: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+#service {
+  margin: 0;
+  padding: 0;
+  background-color: #F2F1F1;
+}
+#service h2 {
+  padding: 20px 0 0 0;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid #F2F1F1;
+}
+#service h3 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#service .card {
+  background: #FFFF;
+  margin: 0 auto;
+  width: 250px;
+  height: 400px;
+  box-shadow: 3px 3px 5px 0px #9b9b9b;
+}
+#service .card h4 {
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+}
+#service .card h4 span {
+  color: #95ECFD;
+  display: block;
+}
+#service .card img {
+  margin: 0 auto;
+  width: 90px;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
