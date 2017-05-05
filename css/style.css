@@ -37,29 +37,37 @@ header h1 {
   font-size: 14px;
   width: 100%;
   padding: 0;
-  margin: 0;
+  margin: 100px 0 0 0;
 }
-header figure {
+header .header_fixed {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+}
+header .header_fixed figure {
   padding-left: 0;
   margin-left: 0;
 }
-header figure a img {
+header .header_fixed figure a img {
   width: 150px;
 }
-header #nav {
+header .header_fixed #nav {
   /*
   *menu hamburger
   *top right position
   *
   */
 }
-header #nav .menu .sub {
+header .header_fixed #nav .menu .sub {
   display: none;
 }
-header #nav .menu .sub li {
+header .header_fixed #nav .menu .sub li {
   list-style-type: none;
 }
-header #nav .menu .sub li .dropdown {
+header .header_fixed #nav .menu .sub li .dropdown {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -74,26 +82,26 @@ header #nav .menu .sub li .dropdown {
   height: 120px;
   border-radius: 3px;
   background-color: aliceblue;
-  z-index: 60;
+  z-index: 100;
 }
-header #nav .menu .sub li .dropdown li {
+header .header_fixed #nav .menu .sub li .dropdown li {
   list-style-type: none;
 }
-header #nav .menu .sub li .dropdown li a {
+header .header_fixed #nav .menu .sub li .dropdown li a {
   text-decoration: none;
   color: #222222;
 }
-header #nav .menu .header__icon {
+header .header_fixed #nav .menu .header__icon {
   list-style-type: none;
 }
-header #nav .menu .header__icon #header__icon {
+header .header_fixed #nav .menu .header__icon #header__icon {
   display: block;
   border-radius: 3px;
   width: 40px;
   height: 30px;
   cursor: pointer;
 }
-header #nav .menu .header__icon #header__icon:after {
+header .header_fixed #nav .menu .header__icon #header__icon:after {
   content: '';
   margin: 0 auto;
   padding: 0;
@@ -104,19 +112,23 @@ header #nav .menu .header__icon #header__icon:after {
   -moz-box-shadow: 0 10px 0 1px #000000, 0 16px 0 1px #000000, 0 22px 0 1px #000000;
   box-shadow: 0 10px 0 1px #000000, 0 16px 0 1px #000000, 0 22px 0 1px #000000;
 }
-header #nav .menu li:hover > ul {
+header .header_fixed #nav .menu .header__icon:hover > ul {
   /*
   *dropdown visible
   */
   position: absolute;
   top: 50px;
-  right: 0;
+  right: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  z-index: 50;
 }
 
+/*===========================================================================
+service part
+============================================================================*/
 #service {
   margin: 0;
   padding: 0;
@@ -138,7 +150,7 @@ header #nav .menu li:hover > ul {
   text-transform: uppercase;
 }
 #service .card {
-  background: #FFFF;
+  background-color: #FFFF;
   margin: 0 auto;
   width: 250px;
   height: 400px;
@@ -157,6 +169,32 @@ header #nav .menu li:hover > ul {
   margin: 0 auto;
   width: 90px;
   display: block;
+}
+#service .card p {
+  font-size: 13px;
+  color: #BCBCBC;
+  width: 200px;
+  margin: 0 auto;
+  text-align: justify;
+  padding-top: 20px;
+}
+
+/*==================================================================================================
+contact part
+=====================================================================================================*/
+#contact {
+  background-color: white;
+}
+#contact h2 {
+  width: 250px;
+  margin: 0 auto;
+  font-size: 50px;
+  font-weight: 300;
+}
+#contact #map {
+  z-index: -10;
+  width: 100%;
+  height: 160px;
 }
 
 /*# sourceMappingURL=style.css.map */
