@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Digital Web</title>
+    <title>Contact</title>
     <meta name="description" content="Digital Web est une agence web située Place de la Bastille.
         Depuis 6 ans, nous concevons des interfaces web créatives et innovantes.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,26 +11,71 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="icon" href="../favicon.ico"/>
     <link rel="stylesheet" href="../css/main.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 <header>
-    <figure><a href="../index.html"><img src="../img/logo.svg" alt="logo société"></a></figure>
+    <div class="header_fixed">
+    <figure><a href="../index.html"><img src="../img/logo3.svg" alt="logo société"></a></figure>
     <nav id="nav">
-        <ul>
-            <li class="header__icon"><a href="" id="header__icon"></a>
-                <!-- /#header__icon -->
-                <!-- /.header__icon -->
-                <ul class="dropdown">
-                    <li><a href="service.html">NOS SERVICES</a></li>
-                    <li><a href="team.html">L'EQUIPE</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+        <!-- /#nav -->
+        <ul class="menu">
+            <li class="header__icon"><a href="#" id="header__icon"></a>
+                <ul class="sub">
+                    <li>
+                        <ul class="dropdown">
+                            <li><a href="service.html">NOS SERVICES</a></li>
+                            <li><a href="team.html">L'EQUIPE</a></li>
+                        </ul>
+                    </li>
+
                 </ul>
+            </li>
+        </ul>​
+    </nav>
+    </div>
+    <!-- /.header_fixed -->
+    <h1>AGENCE DE COMMUNICATION WEB</h1>
+</header>
+<main id="contact">
+<div id="map"></div>
+<!-- /#map -->
+    <h2>contactez-nous</h2>
+    <h3>Une question, un projet web ?
+        Nous serons ravis d'en discuter
+        au 01 43 55 69 21</h3>
+    <form>
+        <input type="text" placeholder="Nom + Prénom">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <!-- /# --></form>
+</main>
+<!-- /#contact -->
+<footer>
+    <nav>
+        <a class="highPage" href="#"><img src="../img/picto-fleche.svg" alt="haut de page"></a>
+        <ul>
+            <li><img src="../img/de_footer.png" alt="Digital Expression"></li>
+            <li>
+                <a href="https://fr-fr.facebook.com/"><img src="../img/Facebook.svg" alt="Facebook"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/?lang=fr"><img src="../img/twitter.svg" alt="Twitter"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com"><img src="../img/instagram.svg" alt="Instagram"></a>
+            </li>
+            <li>
+                <a href="https://plus.google.com/"><img src="../img/googleplus.svg" alt="Google +"></a>
             </li>
         </ul>
     </nav>
-    <h1>AGENCE DE COMMUNICATION WEB</h1>
-</header>
+    <p>Digital Expression © 2014 - Agence de communication web - 01 43 55 69 21</p>
+
+</footer>
 <script>
     (function (b, o, i, l, e, r) {
         b.GoogleAnalyticsObject = l;
@@ -47,5 +92,11 @@
     ga('create', 'UA-XXXXX-X', 'auto');
     ga('send', 'pageview');
 </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0zZCpLabRlisarVr9Gepq-vJmO8ErIHI&callback=initMap" async
+        defer></script>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>
