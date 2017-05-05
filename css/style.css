@@ -158,5 +158,10 @@ header #nav .menu li:hover > ul {
   width: 90px;
   display: block;
 }
+#service .card p {
+  width: 200px;
+  margin: 0 auto;
+  text-align: justify;
+}
 
 /*# sourceMappingURL=style.css.map */
