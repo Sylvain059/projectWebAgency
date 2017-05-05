@@ -5,7 +5,7 @@
   #slideshow {
     position: relative;
     width: 320px;
-    height:288px;
+    height:338px;
     padding: 15px;
     border: 1px solid #ddd;
     margin: 0 auto 2em;
@@ -57,7 +57,7 @@
 
 #slideshow .container {
     position:relative;
-    width: 330px;
+    width: 323px;
     height: 228px;
     overflow: hidden;
 }
@@ -135,7 +135,7 @@
     animation: slider 32s infinite;
 }
 
-#timeline {
+/*#timeline {
     position: absolute;
     background: #999;
     bottom: 15px;
@@ -148,7 +148,7 @@
     -webkit-animation: timeliner 32s infinite;
     -moz-animation: timeliner 32s infinite;
     animation: timeliner 32s infinite;
-}
+}*/
 
 @-webkit-keyframes timeliner {
     0%, 25%, 50%, 75%, 100% { width: 0;     }
