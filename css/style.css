@@ -43,7 +43,7 @@ header .header_fixed {
   width: 100%;
   background-color: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   z-index: 2;
@@ -239,8 +239,71 @@ contact part
   text-align: center;
 }
 #contact #map {
+  /*
+  *map
+  */
   width: 100%;
   height: 160px;
+}
+
+/*======================================================================================
+tablet format
+==========================================================================================*/
+@media (min-width: 768px) {
+  header .header_fixed {
+    justify-content: space-between;
+  }
+  header .header_fixed figure img {
+    margin-left: 20px;
+  }
+
+  /*================================================================================
+  service page
+  ==================================================================================*/
+  #service {
+    padding-bottom: 50px;
+  }
+  #service h2 {
+    font-size: 40px;
+    border-bottom: 0.2px solid #CECDCD;
+  }
+  #service figure img {
+    width: 700px;
+    content: url("../img/creation-site-internet.jpg");
+  }
+  #service .card_top, #service .card_bottom {
+    display: flex;
+  }
+  #service .card_top .card, #service .card_bottom .card {
+    width: 125px;
+  }
+  #service .card_top .card p, #service .card_bottom .card p {
+    width: 110px;
+  }
+  #service .card_top {
+    padding-bottom: 20px;
+  }
+  #service .card_top .card:nth-child(1) {
+    height: 430px;
+  }
+  #service .card_top .card:nth-child(2) {
+    height: 500px;
+  }
+  #service .card_top .card:nth-child(4) {
+    height: 450px;
+  }
+  #service .card_bottom .card:nth-child(1) {
+    height: 510px;
+  }
+  #service .card_bottom .card:nth-child(2) {
+    height: 430px;
+  }
+  #service .card_bottom .card:nth-child(3) {
+    height: 455px;
+  }
+  #service .card_bottom .card:nth-child(4) {
+    height: 430px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
