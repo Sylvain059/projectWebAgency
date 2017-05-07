@@ -141,36 +141,38 @@ service part
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
-  border-bottom: 1px solid #F2F1F1;
+  border-bottom: 1px solid #CECDCD;
 }
-#service h3 {
+
+h3 {
   font-size: 30px;
   text-align: center;
   font-weight: 400;
   text-transform: uppercase;
 }
-#service .card {
+
+.card {
   background-color: #FFFF;
   margin: 0 auto;
   width: 250px;
   height: 400px;
   box-shadow: 3px 3px 5px 0px #9b9b9b;
 }
-#service .card h4 {
+.card h4 {
   text-transform: uppercase;
   font-weight: 400;
   text-align: center;
 }
-#service .card h4 span {
+.card h4 span {
   color: #95ECFD;
   display: block;
 }
-#service .card img {
+.card img {
   margin: 0 auto;
   width: 90px;
   display: block;
 }
-#service .card p {
+.card p {
   font-size: 13px;
   color: #BCBCBC;
   width: 200px;
@@ -320,7 +322,7 @@ tablet landscape format
   }
 }
 /*========================================================================
-desktop portrait format
+tablet portrait format
 ============================================================================*/
 @media (min-width: 1024px) {
   header .header_fixed {
