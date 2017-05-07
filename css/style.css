@@ -356,7 +356,8 @@ tablet portrait format
     margin: 0 auto;
   }
   #service figure img {
-    width: 700px;
+   /*
+width: 700px;*/
     content: url("../img/creation-site-internet.jpg");
   }
   #service .card_top, #service .card_bottom {
@@ -391,6 +392,31 @@ tablet portrait format
   }
   #service .card_bottom .card:nth-child(4) {
     height: 365px;
+  }
+}
+/*====================================================================
+desktop format
+========================================================================*/
+@media (min-width: 1450px) {
+  #service figure {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  #service figure img {
+    width: 1000px;
+    content: url("../img/creation-site-internet.jpg");
+  }
+  #service .card_top, #service .card_bottom {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+  }
+  #service .card_top .card, #service .card_bottom .card {
+    width: 250px;
+    height: 400px !important;
+  }
+  #service .card_top .card p, #service .card_bottom .card p {
+    width: 200px;
   }
 }
 
