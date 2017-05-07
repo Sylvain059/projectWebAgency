@@ -304,6 +304,20 @@ tablet format
   #service .card_bottom .card:nth-child(4) {
     height: 430px;
   }
+
+  #contact #map {
+    height: 450px;
+  }
+  #contact h2 {
+    width: 400px;
+  }
+  #contact h3 {
+    width: 400px;
+    padding-bottom: 50px;
+  }
+  #contact form textarea {
+    height: 300px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
