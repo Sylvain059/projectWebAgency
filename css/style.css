@@ -247,7 +247,7 @@ contact part
 }
 
 /*======================================================================================
-tablet format
+tablet landscape format
 ==========================================================================================*/
 @media (min-width: 768px) {
   header .header_fixed {
@@ -317,6 +317,78 @@ tablet format
   }
   #contact form textarea {
     height: 300px;
+  }
+}
+/*========================================================================
+desktop portrait format
+============================================================================*/
+@media (min-width: 1024px) {
+  header .header_fixed {
+    height: 100px;
+  }
+  header .header_fixed #nav .menu .header__icon:hover > ul {
+    position: fixed;
+    top: 16px;
+    right: 0;
+  }
+  header .header_fixed #nav .menu .header__icon #header__icon {
+    display: none;
+  }
+  header .header_fixed #nav .menu .header__icon .sub {
+    display: block;
+  }
+  header .header_fixed #nav .menu .header__icon .sub .dropdown {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 400px;
+  }
+
+  /*===========================================================================
+  service page
+  =============================================================================*/
+  #service figure {
+    width: 700px;
+    margin: 0 auto;
+  }
+  #service figure img {
+    width: 700px;
+    content: url("../img/creation-site-internet.jpg");
+  }
+  #service .card_top, #service .card_bottom {
+    display: flex;
+  }
+  #service .card_top .card, #service .card_bottom .card {
+    width: 225px;
+  }
+  #service .card_top .card p, #service .card_bottom .card p {
+    width: 200px;
+  }
+  #service .card_top .card:nth-child(1) {
+    height: 370px;
+  }
+  #service .card_top .card:nth-child(2) {
+    height: 380px;
+  }
+  #service .card_top .card:nth-child(3) {
+    height: 330px;
+  }
+  #service .card_top .card:nth-child(4) {
+    height: 370px;
+  }
+  #service .card_bottom .card:nth-child(1) {
+    height: 380px;
+  }
+  #service .card_bottom .card:nth-child(2) {
+    height: 350px;
+  }
+  #service .card_bottom .card:nth-child(3) {
+    height: 360px;
+  }
+  #service .card_bottom .card:nth-child(4) {
+    height: 365px;
   }
 }
 
