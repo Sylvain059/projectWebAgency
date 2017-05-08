@@ -332,10 +332,13 @@ tablet portrait format
   header .header_fixed {
     height: 100px;
   }
+  header .header_fixed #nav .menu {
+    position: relative;
+  }
   header .header_fixed #nav .menu .header__icon:hover > ul {
-    position: fixed;
-    top: 16px;
-    right: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
   header .header_fixed #nav .menu .header__icon #header__icon {
     display: none;
@@ -408,7 +411,7 @@ desktop format
   header .header_fixed #nav .menu .header__icon:hover > ul {
     position: fixed;
     top: 16px;
-    right: 75px;
+    right: 95px;
   }
   header .header_fixed #nav .menu .header__icon #header__icon {
     display: none;
