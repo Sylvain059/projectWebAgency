@@ -1,3 +1,4 @@
+
 .mainIndex{
   margin: 10px 0;
 }
@@ -45,6 +46,37 @@ div#slider figure {
   animation: 30s slidy infinite;
 }
 
+.mainTeam{
+  margin: 25px 0;
+}
+
+.teamM, .teamL{ /*on retire les format medium et large dans le format small*/
+  display: none;
+}
+
+.teamS{
+  text-align: center;
+}
+
+.teamS figure{
+  display: block;
+  margin-top: 50px;
+}
+
+.teamS .team{ /*photos de l'équipe*/
+margin: 5 px 0;
+}
+
+.teamS .smartphone{
+  width: 125px;
+  height: 75px;
+}
+
+.teamS .canette{
+  width: 75px;
+  height: 125px;
+}
+
 
 
 
@@ -61,7 +93,7 @@ footer{
   border-radius: 3px;;
 }
 
-.highPage{
+.highPage{ /*ramène vers le haut de la page*/
   display: block;
   width: 36px;
   height: 36px;
@@ -93,6 +125,7 @@ footer img{
 }
 
 footer p{
+  font-size: 13px;
   height: 30px;
   margin-top: 0;
   display: flex;
@@ -101,6 +134,10 @@ footer p{
 }
 
 @media (min-width:768px) {
+
+  /*Concerne la page Home
+  ===================================================================*/
+
   .sliderSmall{
     display: none;
   }
@@ -110,7 +147,41 @@ footer p{
   }
 
   div#slider{
-    height: 500px
+  height: 500px
+  }
+
+/*
+Concerne la page équipe
+=====================================================================*/
+
+.teamS{
+  display: none;
+}
+
+.teamM{
+  width: auto;
+  display: flex;
+}
+
+.teamM figure{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.teamM .team{/*photo de l'équipe*/
+  width: 150px;
+  height: 200px;
+}
+
+.teamM .smartphone{
+  width: 150px;
+  height: 175px;
+  }
+
+  .teamM .canette{
+    width: 150px;
+    height: 200px;
   }
 
 }
@@ -120,6 +191,9 @@ footer p{
 
 
 @media (min-width:1024px) {
+
+/*Concerne la page Home
+=====================================================================*/
 
   .sliderMedium{
     display: none;
@@ -132,5 +206,38 @@ footer p{
   div#slider{
     height: 700px;
   }
+
+  /*Concerne la page équipe
+  ===================================================================*/
+
+  .teamM{
+    display: none;
+  }
+
+  .teamL{
+    width: auto;
+    display: flex;
+  }
+
+  .teamL figure{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .teamL .team{/*photo de l'équipe*/
+    width: 215px;
+    height: 275px;
+  }
+
+  .teamL .smartphone{
+    width: 215px;
+    height: 195px;
+    }
+
+    .teamL .canette{
+      width: 175px;
+      height: 250px;
+    }
 
 }
