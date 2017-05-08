@@ -9,49 +9,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="icon" href="../favicon.ico"/>
+    <!--<link rel="icon" href="../favicon.ico"/>-->
+    <link rel="icon" type="image/svg+xml" href="../img/logo.svg">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
+
 <body>
+<!--
+header with nav & logo
+-->
 <header>
     <div class="header_fixed">
-    <figure><a href="../index.html"><img src="../img/logo3.svg" alt="logo société"></a></figure>
-    <nav id="nav">
-        <!-- /#nav -->
-        <ul class="menu">
-            <li class="header__icon"><a href="#" id="header__icon"></a>
-                <ul class="sub">
-                    <li>
-                        <ul class="dropdown">
-                            <li><a href="service.html">NOS SERVICES</a></li>
-                            <li><a href="team.html">L'EQUIPE</a></li>
-                        </ul>
-                    </li>
-
-                </ul>
-            </li>
-        </ul>​
-    </nav>
+        <figure><a href="../index.html"><img src="../img/logo6.svg" alt="logo société"></a></figure>
+        <nav id="nav">
+            <!-- /#nav -->
+            <ul class="menu">
+                <li class="header__icon"><a href="#" id="header__icon"></a>
+                    <ul class="sub">
+                        <li>
+                            <ul class="dropdown">
+                                <li><a href="service.html">NOS SERVICES</a></li>
+                                <li><a href="team.html">L'EQUIPE</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--.menu-->
+                </li>
+            </ul>
+            ​
+        </nav>
     </div>
     <!-- /.header_fixed -->
     <h1>AGENCE DE COMMUNICATION WEB</h1>
 </header>
+
+<!--
+contact page
+-->
 <main id="contact">
-<div id="map"></div>
-<!-- /#map -->
+    <!--insert map-->
+    <div id="map"></div>
+    <!-- /#map -->
+
+    <!--title page-->
     <h2>contactez-nous</h2>
-    <h3>Une question, un projet web ?
-        Nous serons ravis d'en discuter
-        au 01 43 55 69 21</h3>
+
+    <h3>Une question, un projet web ? <br>
+        Nous serons ravis d'en discuter <br>
+        au 01 43 55 69 21
+    </h3>
+    <!--form-->
     <form>
         <input type="text" placeholder="Nom + Prénom">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <!-- /# --></form>
+        <input type="text" placeholder="Société">
+        <input type="text" placeholder="Téléphone">
+        <input type="text" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <input type="submit" value="ENVOYER">
+        <!-- /# -->
+    </form>
 </main>
 <!-- /#contact -->
 <footer>
@@ -94,9 +112,9 @@
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0zZCpLabRlisarVr9Gepq-vJmO8ErIHI&callback=initMap" async
         defer></script>
+<script src="../js/main.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="../js/plugins.js"></script>
-<script src="../js/main.js"></script>
 </body>
 </html>
