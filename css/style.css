@@ -42,6 +42,7 @@ header h1 {
 header .header_fixed {
   width: 90%;
   background-color: white;
+  border-bottom: 1px solid black;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -334,7 +335,7 @@ tablet portrait format
   header .header_fixed #nav .menu .header__icon:hover > ul {
     position: fixed;
     top: 16px;
-    right: 0;
+    right: 50px;
   }
   header .header_fixed #nav .menu .header__icon #header__icon {
     display: none;
@@ -401,6 +402,29 @@ width: 700px;*/
 desktop format
 ========================================================================*/
 @media (min-width: 1450px) {
+  header .header_fixed {
+    height: 100px;
+  }
+  header .header_fixed #nav .menu .header__icon:hover > ul {
+    position: fixed;
+    top: 16px;
+    right: 75px;
+  }
+  header .header_fixed #nav .menu .header__icon #header__icon {
+    display: none;
+  }
+  header .header_fixed #nav .menu .header__icon .sub {
+    display: block;
+  }
+  header .header_fixed #nav .menu .header__icon .sub .dropdown {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 400px;
+  }
+
   #service figure {
     /*
     *resize image center
