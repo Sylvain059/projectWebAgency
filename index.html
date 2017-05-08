@@ -1,48 +1,59 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!doctype html>
+<html class="no-js" lang="fr">
 
       <head>
             <meta charset="utf-8">
+            <meta http-equiv="x-ua-compatible" content="ie=edge">
+            <title>Home</title>
             <meta name="description" content="Digital Web est une agence web située Place de la Bastille.
         Depuis 6 ans, nous concevons des interfaces web créatives et innovantes.">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
             <!-- Place favicon.ico in the root directory -->
-            <link rel="icon" href="favicon.ico" />
+            <!--<link rel="icon" href="../favicon.ico"/>-->
+            <link rel="icon" type="image/svg+xml" href="../img/logo.svg">
             <link rel="stylesheet" href="css/main.css">
             <link rel="stylesheet" href="css/style.css">
-            <title>Digital web Home</title>
+            <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
       </head>
 
       <body>
             <header>
-                  <figure>
-                        <a href="index.html"><img src="img/logo3.svg" alt="logo société"></a>
-                  </figure>
+                  <div class="header_fixed">
+                        <!--logo-->
+                        <figure>
+                              <a href="index.html"><img src="img/logo6.svg" alt="logo société"></a>
+                        </figure>
 
+                        <!--nav-->
+                        <nav id="nav">
+                              <!-- /#nav -->
+                              <ul class="menu">
+                                    <li class="header__icon">
+                                          <a href="#" id="header__icon"></a>
+                                          <ul class="sub">
+                                                <li>
+                                                      <ul class="dropdown">
+                                                            <li><a href="Pages/team.html">L'EQUIPE</a></li>
+                                                            <li><a href="Pages/contact.html">CONTACT</a></li>
+                                                      </ul>
+                                                </li>
 
-                  <nav id="nav">
-                        <!-- /#nav -->
-                        <ul class="menu">
-                              <li class="header__icon">
-                                    <a href="#" id="header__icon"></a>
-                                    <ul class="sub">
-                                          <li>
-                                                <ul class="dropdown">
-                                                      <li><a href="service.html">NOS SERVICES</a></li>
-                                                      <li><a href="team.html">L'EQUIPE</a></li>
-                                                      <li><a href="contact.html">CONTACT</a></li>
-                                                </ul>
-                                          </li>
-
-                                    </ul>
-                              </li>
-                        </ul>​
-                  </nav>
+                                          </ul>
+                                    </li>
+                              </ul>
+                              ​
+                        </nav>
+                  </div>
+                  <!-- /.header_fixed -->
                   <h1>AGENCE DE COMMUNICATION WEB</h1>
             </header>
+
             <main class="mainIndex">
                   <div class="sliderSmall">
+                        <!--Version mobile-->
                         <div id="slider">
                               <h2>Une agence web créative</h2>
                               <figure>
@@ -53,8 +64,10 @@
                                     <img src="img/small/imagebase5_s.jpg" alt "pyramide du Louvre">
                               </figure>
                         </div>
+
                   </div>
                   <div class="sliderMedium">
+                        <!--Version tablette-->
                         <div id="slider">
                               <h2>Une agence web créative</h2>
                               <figure>
@@ -65,8 +78,10 @@
                                     <img src="img/medium/imagebase5_m.jpg" alt "pyramide du Louvre">
                               </figure>
                         </div>
+
                   </div>
                   <div class="sliderLarge">
+                        <!--Version pc-->
                         <div id="slider">
                               <h2>Une agence web créative</h2>
                               <figure>
@@ -79,6 +94,7 @@
                         </div>
                   </div>
             </main>
+
             <footer>
                   <nav>
                         <a class="highPage" href="#"><img src="img/picto-fleche.svg" alt="haut de page"></a>
