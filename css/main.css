@@ -59,7 +59,6 @@ div#slider figure {
 }
 
 .teamS figure{
-  display: block;
   margin-top: 50px;
 }
 
@@ -67,12 +66,12 @@ div#slider figure {
 margin: 5 px 0;
 }
 
-.teamS .smartphone{
+#smartphone{
   width: 125px;
   height: 75px;
 }
 
-.teamS .canette{
+#canette{
   width: 75px;
   height: 125px;
 }
@@ -154,40 +153,60 @@ footer p{
 Concerne la page équipe
 =====================================================================*/
 
-.teamS{
-  display: none;
-}
 
-.teamM{
-  width: auto;
+.mainTeam .teamS figure{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
 }
 
-.teamM figure{
+.team_g{
   width: 50%;
   display: flex;
   flex-wrap: wrap;
+  content: url("../img/medium/guillaume_m.jpg")
+
 }
 
-.teamM .team{/*photo de l'équipe*/
-  width: 150px;
+.team_g::after{
+  content: url("../img/medium/guillaume_m.jpg")
+}
+.team_s{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  content: url("../img/medium/sylvain_m.jpg")
+
+}
+
+.team_s::after{
+  content: url("../img/medium/sylvain_m.jpg")
+}
+
+#smartphone{
+  align-self: flex-end;
+  width: 30%;
   height: 200px;
+  content: url("../img/medium/iphone_m.png")
 }
 
-.teamM .smartphone{
-  width: 150px;
-  height: 175px;
-  }
-
-  .teamM .canette{
-    width: 150px;
-    height: 200px;
-  }
-
+.=#smartphone:after{
+  content:url("../img/medium/iphone_m.png")
 }
 
+#canette{
+  align-self: flex-end;
+  width: 20%;
+  height: 200px;
+  content: url("../img/medium/canette_m.jpg")
+}
 
+#canette:after{
+  content:url("../img/medium/canette_m.jpg")
+}
 
+}
 
 
 @media (min-width:1024px) {
@@ -210,34 +229,54 @@ Concerne la page équipe
   /*Concerne la page équipe
   ===================================================================*/
 
-  .teamM{
-    display: none;
-  }
-
-  .teamL{
-    width: auto;
-    display: flex;
-  }
-
-  .teamL figure{
+  .team_g{
     width: 50%;
     display: flex;
     flex-wrap: wrap;
+    content: url("../img/large/guillaume_l.jpg")
+
   }
 
-  .teamL .team{/*photo de l'équipe*/
-    width: 215px;
-    height: 275px;
+  .team_g::after{
+    content: url("../img/large/guillaume_l.jpg")
+  }
+  .team_s{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    content: url("../img/large/sylvain_l.jpg")
+
   }
 
-  .teamL .smartphone{
-    width: 215px;
-    height: 195px;
-    }
+  .team_s::after{
+    content: url("../img/large/sylvain_l.jpg")
+  }
 
-    .teamL .canette{
-      width: 175px;
-      height: 250px;
-    }
+  #smartphone{
+    width: 30%;
+    height: 300px;
+    align-self: flex-end;
+    content: url("../img/large/iphone_l.png")
+  }
+
+  #smartphone:after{
+    content:url("../img/large/iphone_l.png")
+  }
+
+  #canette{
+    width: 20%;
+    height: 300px;
+    align-self: flex-end;
+    content: url("../img/large/canette_l.jpg")
+  }
+
+  #canette:after{
+    content:url("../img/large/canette_l.jpg")
+  }
+
+  .figcaption{
+    align-self: center;
+
+  }
 
 }
